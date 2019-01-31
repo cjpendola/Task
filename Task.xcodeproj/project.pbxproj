@@ -8,11 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		345E48E522037DFB00E498CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E48E422037DFB00E498CC /* AppDelegate.swift */; };
-		345E48E722037DFB00E498CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E48E622037DFB00E498CC /* ViewController.swift */; };
 		345E48EA22037DFB00E498CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 345E48E822037DFB00E498CC /* Main.storyboard */; };
 		345E48EC22037DFB00E498CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 345E48EB22037DFB00E498CC /* Assets.xcassets */; };
 		345E48EF22037DFB00E498CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 345E48ED22037DFB00E498CC /* LaunchScreen.storyboard */; };
 		345E48FA22037DFB00E498CC /* TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E48F922037DFB00E498CC /* TaskTests.swift */; };
+		345E490622037E6600E498CC /* DateHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E490522037E6600E498CC /* DateHelpers.swift */; };
+		345E490922037E8500E498CC /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E490822037E8500E498CC /* CoreDataStack.swift */; };
+		345E490C22037EA100E498CC /* Task+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E490B22037EA100E498CC /* Task+Convenience.swift */; };
+		345E490E22037EB400E498CC /* TaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E490D22037EB400E498CC /* TaskController.swift */; };
+		345E491122037EE600E498CC /* TaskDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E491022037EE600E498CC /* TaskDetailTableViewController.swift */; };
+		345E491422037F2300E498CC /* TaskListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E491322037F2300E498CC /* TaskListTableViewController.swift */; };
+		345E491622037F4200E498CC /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E491522037F4200E498CC /* ButtonTableViewCell.swift */; };
+		345E491A22037F7B00E498CC /* Task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 345E491822037F7B00E498CC /* Task.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +35,6 @@
 /* Begin PBXFileReference section */
 		345E48E122037DFA00E498CC /* Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Task.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		345E48E422037DFB00E498CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		345E48E622037DFB00E498CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		345E48E922037DFB00E498CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		345E48EB22037DFB00E498CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		345E48EE22037DFB00E498CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +42,14 @@
 		345E48F522037DFB00E498CC /* TaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		345E48F922037DFB00E498CC /* TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTests.swift; sourceTree = "<group>"; };
 		345E48FB22037DFB00E498CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		345E490522037E6600E498CC /* DateHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelpers.swift; sourceTree = "<group>"; };
+		345E490822037E8500E498CC /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		345E490B22037EA100E498CC /* Task+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+Convenience.swift"; sourceTree = "<group>"; };
+		345E490D22037EB400E498CC /* TaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskController.swift; sourceTree = "<group>"; };
+		345E491022037EE600E498CC /* TaskDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailTableViewController.swift; sourceTree = "<group>"; };
+		345E491322037F2300E498CC /* TaskListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListTableViewController.swift; sourceTree = "<group>"; };
+		345E491522037F4200E498CC /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
+		345E491922037F7B00E498CC /* Task.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Task.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +92,12 @@
 			isa = PBXGroup;
 			children = (
 				345E48E422037DFB00E498CC /* AppDelegate.swift */,
-				345E48E622037DFB00E498CC /* ViewController.swift */,
-				345E48E822037DFB00E498CC /* Main.storyboard */,
-				345E48EB22037DFB00E498CC /* Assets.xcassets */,
-				345E48ED22037DFB00E498CC /* LaunchScreen.storyboard */,
-				345E48F022037DFB00E498CC /* Info.plist */,
+				345E491722037F4700E498CC /* Views */,
+				345E491222037EE900E498CC /* View Controllers */,
+				345E490F22037EC100E498CC /* Model Controllers */,
+				345E490A22037E8D00E498CC /* Model */,
+				345E490722037E7100E498CC /* Utils */,
+				345E490422037E4300E498CC /* Resources */,
 			);
 			path = Task;
 			sourceTree = "<group>";
@@ -94,6 +109,60 @@
 				345E48FB22037DFB00E498CC /* Info.plist */,
 			);
 			path = TaskTests;
+			sourceTree = "<group>";
+		};
+		345E490422037E4300E498CC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				345E48E822037DFB00E498CC /* Main.storyboard */,
+				345E48EB22037DFB00E498CC /* Assets.xcassets */,
+				345E48ED22037DFB00E498CC /* LaunchScreen.storyboard */,
+				345E48F022037DFB00E498CC /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		345E490722037E7100E498CC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				345E490522037E6600E498CC /* DateHelpers.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		345E490A22037E8D00E498CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				345E490822037E8500E498CC /* CoreDataStack.swift */,
+				345E490B22037EA100E498CC /* Task+Convenience.swift */,
+				345E491822037F7B00E498CC /* Task.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		345E490F22037EC100E498CC /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				345E490D22037EB400E498CC /* TaskController.swift */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		345E491222037EE900E498CC /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				345E491022037EE600E498CC /* TaskDetailTableViewController.swift */,
+				345E491322037F2300E498CC /* TaskListTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		345E491722037F4700E498CC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				345E491522037F4200E498CC /* ButtonTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +266,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				345E48E722037DFB00E498CC /* ViewController.swift in Sources */,
+				345E490C22037EA100E498CC /* Task+Convenience.swift in Sources */,
+				345E490922037E8500E498CC /* CoreDataStack.swift in Sources */,
 				345E48E522037DFB00E498CC /* AppDelegate.swift in Sources */,
+				345E491622037F4200E498CC /* ButtonTableViewCell.swift in Sources */,
+				345E490E22037EB400E498CC /* TaskController.swift in Sources */,
+				345E490622037E6600E498CC /* DateHelpers.swift in Sources */,
+				345E491A22037F7B00E498CC /* Task.xcdatamodeld in Sources */,
+				345E491422037F2300E498CC /* TaskListTableViewController.swift in Sources */,
+				345E491122037EE600E498CC /* TaskDetailTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,7 +438,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CC2FU4U4ZR;
-				INFOPLIST_FILE = Task/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Task/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -380,7 +456,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CC2FU4U4ZR;
-				INFOPLIST_FILE = Task/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Task/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,6 +541,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		345E491822037F7B00E498CC /* Task.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				345E491922037F7B00E498CC /* Task.xcdatamodel */,
+			);
+			currentVersion = 345E491922037F7B00E498CC /* Task.xcdatamodel */;
+			path = Task.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 345E48D922037DFA00E498CC /* Project object */;
 }
